@@ -4,3 +4,9 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   margin: 0;
 }
+img {
+  max-width: 500px; /* Ou o tamanho que você preferir */
+  width: 100%;       /* Garante que ela se adapte em telas menores */
+  height: auto;
+  border-radius: 8px; /* Opcional: arredonda levemente as pontas */
+}
