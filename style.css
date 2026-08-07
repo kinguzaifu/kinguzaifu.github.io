@@ -7,7 +7,7 @@ body {
 }
 img {
   max-width: 500px; /* Ou o tamanho que você preferir */
-  width: 100%;       /* Garante que ela se adapte em telas menores */
+  width: 50%;       /* Garante que ela se adapte em telas menores */
   height: auto;
   border-radius: 8px; /* Opcional: arredonda levemente as pontas */
 }
