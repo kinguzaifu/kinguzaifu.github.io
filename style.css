@@ -1,41 +1,19 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #1e232a;
-  color: #f0f4f8;
-  font-family: 'Trebuchet MS', sans-serif;
-  padding: 30px 20px;
-  min-height: 100vh;
-}
-
-/* Header */
-.site-header {
-  max-width: 900px;
-  margin: 0 auto 20px auto;
-}
-
-.header-title {
-  font-size: 24px;
-  color: #ffffff;
-  letter-spacing: 1px;
-}
-
-.xbox-showcase {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 .game-featured {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  
+  /* 
+     Cor #1E1018 convertida para RGB (30, 16, 24) + Transparência.
+     O valor 0.5 deixa o bloco com 50% de transparência.
+  */
   background-color: rgba(30, 16, 24, 0.5);
+  
+  /* Mantém o efeito de "vidro" e desfoque no fundo do card (Glassmorphism) */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  
+  /* Borda sutil e brilho acrílico */
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 24px;
@@ -44,105 +22,4 @@ body {
     inset 0 1px 2px rgba(255, 255, 255, 0.3),
     0 10px 30px rgba(0, 0, 0, 0.8),
     0 0 20px rgba(29, 222, 81, 0.15);
-}
-
-.poster-container {
-  position: relative;
-  flex: 0 0 260px;
-  width: 100%;
-}
-
-.game-poster {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.poster-container:hover .game-poster {
-  transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(29, 222, 81, 0.4);
-}
-
-.badge-status {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: linear-gradient(135deg, #a813d1, #7209b7);
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.game-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 280px;
-}
-
-.game-title {
-  font-size: 38px;
-  color: #ffffff;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  text-shadow: 0 0 10px rgba(168, 19, 209, 0.6);
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 18px;
-}
-
-.tag {
-  background-color: #2b1523;
-  color: #1dde51; 
-  border: 1px solid #4a273e;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 12px;
-  border-radius: 12px;
-}
-
-.game-description {
-  color: #cbd5e1;
-  line-height: 1.6;
-  font-size: 15px;
-  margin-bottom: 24px;
-}
-
-.btn-primary {
-  background: linear-gradient(to bottom, #2bf260 0%, #109636 100%);
-  color: #041a0a;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 12px 24px;
-  border: 1px solid #145925;
-  border-radius: 20px; 
-  cursor: pointer;
-  box-shadow: 
-    inset 0 1px 0 rgba(255, 255, 255, 0.6), 
-    0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(to bottom, #3af66f 0%, #14b041 100%);
-  transform: translateY(-2px);
-  box-shadow: 
-    inset 0 1px 0 rgba(255, 255, 255, 0.8),
-    0 0 15px rgba(29, 222, 81, 0.6);
 }
