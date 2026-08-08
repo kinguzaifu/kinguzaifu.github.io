@@ -10,14 +10,6 @@
 body {
   /* Fundo intermediário entre preto, cinza e azul escuro */
   background-color: #0f141d;
-  
-  /* Grade sutil em tom azulado */
-  background-image: 
-    linear-gradient(rgba(0, 229, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
-  background-size: 30px 30px;
-  
-  color: #f0f4f8;
   font-family: 'Trebuchet MS', sans-serif;
   padding: 30px 20px;
   min-height: 100vh;
@@ -81,7 +73,7 @@ body::after {
   gap: 30px;
   
   /* Fundo translúcido avermelhado do PSEUDEAD */
-  background-color: rgba(30, 16, 24, 0.6) !important;
+  background-color: rgba(30, 16, 24, 0.2) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   
