@@ -9,7 +9,7 @@
 
 body {
   /* Fundo intermediário entre preto, cinza e azul escuro */
-  background-color: #0f141d;
+  background-color: #523E52;
   font-family: 'Trebuchet MS', sans-serif;
   padding: 30px 20px;
   min-height: 100vh;
@@ -52,7 +52,7 @@ body::after {
 
 .header-title {
   font-size: 22px;
-  color: #00e5ff; /* Cyan Neon */
+  color: #FFB8FF; /* Cyan Neon */
   letter-spacing: 2px;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
