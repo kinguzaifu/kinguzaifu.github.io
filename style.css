@@ -53,6 +53,34 @@ body::after {
   letter-spacing: 1px;
 }
 
+/* ==========================================
+   5. SEÇÃO DA EQUIPE (FORA DA CAIXA)
+   ========================================== */
+.team-section {
+  max-width: 900px;
+  margin: 40px auto 0 auto; /* Centraliza e dá um espaço de 40px no topo */
+  padding: 20px;
+  text-align: center;      /* Centraliza o texto */
+  
+  /* Borda sutil para manter o clima retro/cibernético */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-title {
+  font-size: 18px;
+  color: #1dde51; /* Verde neon da logo */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px rgba(29, 222, 81, 0.4);
+}
+
+.team-description {
+  color: #a0aec0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .xbox-showcase {
   max-width: 900px;
   margin: 0 auto;
